@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Strange_Loop</title>
+  <script src="socket.io.js"></script>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      font-family: sans-serif;
+      background-color: #000;
+    }
+    #container {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Strange Loop</h1>
+  </div>
+  <script>
+  'use strict';
+
+  var socket = io.connect();
+  var block = false;
+  // fucntions
+  var randomColor = function randomColor() {
+    var color = function color() {
+      return Math.floor(Math.random() * 256);
+    };
+    return {
+      r: color(),
+      g: color(),
+      b: color()
+    };
+  };
+  var body = document.querySelector('body');
+  var container = document.querySelector('#container');
+  var inhib = function() {
+    block = true;
+    setTimeout(function() {block = false;}, 500);
+  }
+  var myColor = randomColor();
+  var changeColor = function() {
+    myColor = randomColor();
+    container.style.backgroundColor = 'rgb(' + myColor.r + ', ' + myColor.g + ', ' + myColor.b + ')';
+  }
+  var socketEmit = function() {
+    socket.emit('color', { r: myColor.r, g: myColor.g, b: myColor.b });
+  }
+  var callBack = function() {
+    if (!block) {
+      console.log(myColor);
+      socketEmit();
+      changeColor();
+      inhib();
+    }
+  }
+  container.addEventListener('click', callBack);
+  container.addEventListener('touchstart', callBack);
+  changeColor();
+  </script>
+</body>
+</html>
