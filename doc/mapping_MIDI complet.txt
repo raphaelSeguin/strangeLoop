@@ -1,0 +1,80 @@
+ Mapping params
+
+  ////////////////////////////////////////////
+  CC CHANNEL 1
+  ////////////////////////////////////////////
+
+  // background H 1
+  // background S 2
+  // background B 3
+  // background alpha 4
+
+  //////////////////////////////////////////// stroke
+
+  // stroke H 5
+  // stroke S 6
+  // stroke B 7
+  // stroke alpha 8
+  // strokeWeight 9
+
+  //////////////////////////////////////////// rotations
+
+  // xRotVelPos 11
+  // yRotVelPos 12
+  // zRotVelPos 13
+  // xRotVelNeg 14
+  // yRotVelNeg 15
+  // zRotVelNeg 16
+  //////////////////////////////////////////// attractors
+
+  // thomas b 17
+  // thomas strength 18
+  // thomas scale 19
+  // lorenz sigma 20
+  // lorenz rho 21
+  // lorenz beta 22
+  // lorenz strength 23  
+  // lorenz scale 24
+
+  // brown strength CC 33
+  // brown scale CC 34
+  // voxelator stregnth 36
+  // voxelator scale 37
+
+  //////////////////////////////////////////// translations
+
+  // xTrPos 25
+  // yTrPos 26
+  // zTrPos 27
+  // xTrNeg 28
+  // yTrNeg 29
+  // zTrNeg 30
+  
+  //////////////////////////////////////////// generations
+  
+  generations CC35
+
+
+
+  ////////////////////////////////////////////
+  NOTES
+  ////////////////////////////////////////////
+
+	CHANNEL 1
+
+0 mode history
+1 mode generation
+2 points
+3 lines
+4 tri 
+5 tri fan 
+6 tri strip
+7 quad
+8 quad strip
+
+126 init position
+127 reset ALL
+
+	CHANNEL 2
+
+0 randomize positions

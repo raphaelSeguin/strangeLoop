@@ -1,0 +1,50 @@
+Selection
+
+  //////////////////////////////////////////// background
+
+  // background H 1
+  // background S 2
+  // background B 3
+
+  //////////////////////////////////////////// stroke
+
+  // stroke H 5
+  // stroke S 6
+  // stroke B 7
+  // stroke alpha 8
+  // strokeWeight 9
+
+  //////////////////////////////////////////// rotations
+
+  // xRotVelPos 11
+  // yRotVelPos 12
+  // zRotVelPos 13
+  // xRotVelNeg 14
+  // yRotVelNeg 15
+  // zRotVelNeg 16
+
+  //////////////////////////////////////////// attractors
+
+  // thomas b 17
+  // thomas strength 18
+  // thomas scale 19
+
+
+  // lorenz strength 23  
+  // lorenz scale 24
+
+  // brown strength CC 33
+  // brown scale CC 34
+  // voxelator stregnth 36
+  // voxelator scale 37
+
+  //////////////////////////////////////////// translations
+
+  // zTrPos 27
+  // zTrNeg 30
+
+  //////////////////////////////////////////// generations
+
+  generations CC35
+
+
